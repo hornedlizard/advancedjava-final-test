@@ -13,5 +13,23 @@ public class CalcApp {
 		String operation = scanner.next();
 		
 		/* operation에 따라 4칙 연산 객체를 생성하고 caculate 메서드를 호출합니다. */
+		switch (operation) {
+			case "+":
+				Add add = new Add();
+				System.out.println(add.calculate(a, b));
+				break;
+			case "-":
+				Sub sub = new Sub();
+				System.out.println(sub.calculate(a, b));
+				break;
+			case "*":
+				Mul mul = new Mul();
+				mul.calculate(a, b);
+				break;
+			case "/":
+				Div div = new Div();
+				div.calculate(a, b);
+				break;
+		}
 	}
 }

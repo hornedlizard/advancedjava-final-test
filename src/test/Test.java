@@ -1,10 +1,10 @@
-package prob01;
+package test;
+
 import java.util.Scanner;
 
+public class Test {
 
-public class Gugudan {
-	
-	static int resultNumber = 0;
+static int resultNumber = 0;
 	
 	public static void main( String[] args ) {
 		int l = randomize( 1, 9 );
@@ -40,6 +40,7 @@ public class Gugudan {
 		} else {
 			System.out.println("오답");
 		}
+		
 	}
 
 	private static int randomize( int lNum, int rNum ) {
@@ -57,7 +58,7 @@ public class Gugudan {
 		
 		while( occupied < COUNT_ANSWER_NUMBER ) {
 			
-	        int random = ( int )( Math.random() * MAX_ANSWER_NUMBER ) + 1;
+	        int random = ( int )( Math.random() * 9 ) + 1;
 	        
 	        boolean evaluted = false;
 	        for( int i = 0; i < occupied; i++ ) {
