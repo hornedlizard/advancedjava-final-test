@@ -61,7 +61,7 @@ public class Gugudan {
 	        
 	        boolean evaluted = false;
 	        for( int i = 0; i < occupied; i++ ) {
-	        	if( random == boardNumbers[i] || resultNumber == boardNumbers[i] ) {
+	        	if( random == boardNumbers[i] || resultNumber == boardNumbers[i] ) {  // 우변이 random == resultNumber 이되어야함
 	        		evaluted = true;
 	        		break;
 	        	}
